@@ -1,0 +1,22 @@
+<h1>Articles</h1>
+
+<ul>
+    <% @articles.each do |article|%>
+    <li>
+        <%= article.title %>
+    </li>
+    <% end %>
+</ul>
+
+<table class="table">
+    <tr>
+        <th>Nome</th>
+        <th>Conteudo</th>
+    </tr>
+    <% @articles.each do |article|%>
+    <tr>        
+        <th><%= article.title %></th>
+        <th><%= article.body %></th>
+    </tr>
+    <% end %>
+</table>
